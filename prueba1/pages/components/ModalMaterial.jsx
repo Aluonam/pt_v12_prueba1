@@ -16,7 +16,7 @@ const style = {
   p: 4,
 };
 
-export default function ModalMaterial() {
+export default function ModalMaterial({sentenceBody}) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -32,10 +32,10 @@ export default function ModalMaterial() {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
+            More information:
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+           {sentenceBody}
           </Typography>
         </Box>
       </Modal>

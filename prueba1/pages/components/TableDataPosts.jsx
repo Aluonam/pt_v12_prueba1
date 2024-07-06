@@ -24,7 +24,7 @@ const TableDataPosts = () => {
                   <tr>
                     <td key={element.id}>{element.id}</td>
                     <td key={element.title}>{element.title}</td>
-                    <td><ModalMaterial></ModalMaterial></td>
+                    <td><ModalMaterial sentenceBody={element.body}></ModalMaterial></td>
                   </tr>
           )
     
