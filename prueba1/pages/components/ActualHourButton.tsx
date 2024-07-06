@@ -2,9 +2,7 @@ import React, { useState } from 'react'
 
 const ActualHourButton = () => {
 
-  const [time, setTime] = useState("00:00:00")
-
- 
+  const [time, setTime] = useState <string> ("00:00:00")
 
   const handleActualTime = ()=>{
     const date = new Date()
