@@ -17,6 +17,7 @@ const DelLastWord = () => {
 
   return (
     <div>
+      <h3>Delete last word</h3>
         <input placeholder='Write a sentence' onChange={(e)=>{setSentence(e.target.value)}}></input>
         <br></br>
         <button onClick={()=>{deleteLastWord()}}>Delete last word</button>

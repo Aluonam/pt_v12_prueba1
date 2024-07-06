@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import TableDataPosts from "./components/TableDataPosts";
 import DelLastWord from "./components/DelLastWord";
+import ActualHourButton from "./components/ActualHourButton";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,6 +24,8 @@ export default function Home() {
           <TableDataPosts></TableDataPosts>
           <br></br>
           <DelLastWord></DelLastWord>
+          <br></br>
+          <ActualHourButton></ActualHourButton>
         </div>
       </main>
     </>
