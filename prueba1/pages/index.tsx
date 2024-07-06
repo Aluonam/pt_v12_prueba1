@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import TableDataPosts from "./components/TableDataPosts";
+import DelLastWord from "./components/DelLastWord";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,6 +21,8 @@ export default function Home() {
           <h3>Hello! I am the first technical test in a long long time</h3>
           <br></br>
           <TableDataPosts></TableDataPosts>
+          <br></br>
+          <DelLastWord></DelLastWord>
         </div>
       </main>
     </>

@@ -23,13 +23,12 @@ const TableDataPosts = () => {
     dataTable.filter(element=>element.id <= 10)
               .map((element)=>{
                 return(
-                              <tr>
-                                <td key={element.id}>{element.id}</td>
-                                <td key={element.title}>{element.title}</td>
-                                <td><ModalMaterial sentenceBody={element.body}></ModalMaterial></td>
-                              </tr>
-                      )
-              
+                        <tr>
+                          <td key={element.id}>{element.id}</td>
+                          <td key={element.title}>{element.title}</td>
+                          <td><ModalMaterial sentenceBody={element.body}></ModalMaterial></td>
+                        </tr>
+                      )   
   })
 
 
