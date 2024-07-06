@@ -4,6 +4,7 @@ import styles from "@/styles/Home.module.css";
 import TableDataPosts from "./components/TableDataPosts";
 import DelLastWord from "./components/DelLastWord";
 import ActualHourButton from "./components/ActualHourButton";
+import VowelCounter from "./components/VowelCounter";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,6 +27,8 @@ export default function Home() {
           <DelLastWord></DelLastWord>
           <br></br>
           <ActualHourButton></ActualHourButton>
+          <br></br>
+          <VowelCounter></VowelCounter>
         </div>
       </main>
     </>
