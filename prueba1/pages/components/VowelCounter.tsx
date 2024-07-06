@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 const VowelCounter = () => {
 
     // const [sentence, setSentence] = useState<string>("");
     const [counter, setCounter] = useState<number>(0);
-    console.log("ejemplo")
-
     const handleVowelCounter = (sentence:string)=>{
         const vocals = ["a","o","i","e","u"]
         setCounter(0)

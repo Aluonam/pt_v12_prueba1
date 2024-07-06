@@ -5,6 +5,7 @@ import TableDataPosts from "./components/TableDataPosts";
 import DelLastWord from "./components/DelLastWord";
 import ActualHourButton from "./components/ActualHourButton";
 import VowelCounter from "./components/VowelCounter";
+import FormWithModal from "./components/FormWithModal";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -30,6 +31,8 @@ export default function Home() {
           <br></br>
           <br></br>
           <VowelCounter></VowelCounter>
+          <br></br>
+          <FormWithModal></FormWithModal>
         </div>
       </main>
     </>
