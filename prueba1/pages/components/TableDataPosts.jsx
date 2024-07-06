@@ -16,7 +16,6 @@ const TableDataPosts = () => {
       const call = await fetch(url)
       const data = await call.json()
       setDataTable(data)
-      console.log(data)
     }catch(err){console.log(err, "error detected")}
   }
 
@@ -24,8 +23,8 @@ const TableDataPosts = () => {
     return(
                   <tr>
                     <td key={element.id}>{element.id}</td>
-                    <td>{element.title}</td>
-                    <td></td>
+                    <td key={element.title}>{element.title}</td>
+                    <td><ModalMaterial></ModalMaterial></td>
                   </tr>
           )
     
@@ -34,13 +33,13 @@ const TableDataPosts = () => {
 
   return (
     <>
-      <div>TableDataPosts</div>
+    <h2>First Task: "Table with API and Material UI</h2>
       <table>
         <tbody>
              {dataFormatted}
         </tbody>
       </table>
-      <ModalMaterial></ModalMaterial>
+
     </>
 
   )

@@ -23,7 +23,7 @@ export default function ModalMaterial() {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
+      <Button onClick={handleOpen}>View +</Button>
       <Modal
         open={open}
         onClose={handleClose}
