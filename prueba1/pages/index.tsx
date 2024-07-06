@@ -28,6 +28,7 @@ export default function Home() {
           <br></br>
           <ActualHourButton></ActualHourButton>
           <br></br>
+          <br></br>
           <VowelCounter></VowelCounter>
         </div>
       </main>
