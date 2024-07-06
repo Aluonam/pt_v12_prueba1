@@ -19,15 +19,17 @@ const TableDataPosts = () => {
     }catch(err){console.log(err, "error detected")}
   }
 
-  const dataFormatted = dataTable.map((element)=>{
-    return(
-                  <tr>
-                    <td key={element.id}>{element.id}</td>
-                    <td key={element.title}>{element.title}</td>
-                    <td><ModalMaterial sentenceBody={element.body}></ModalMaterial></td>
-                  </tr>
-          )
-    
+  const dataFormatted = 
+    dataTable.filter(element=>element.id <= 10)
+              .map((element)=>{
+                return(
+                              <tr>
+                                <td key={element.id}>{element.id}</td>
+                                <td key={element.title}>{element.title}</td>
+                                <td><ModalMaterial sentenceBody={element.body}></ModalMaterial></td>
+                              </tr>
+                      )
+              
   })
 
 
