@@ -33,7 +33,7 @@ export default function ModalFormData({dataForModal}:ModalFormDataPropsTypes) {
   const handleClose = () => setOpen(false);
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
+      <Button onClick={handleOpen}>Check</Button>
       <Modal
         open={open}
         onClose={handleClose}

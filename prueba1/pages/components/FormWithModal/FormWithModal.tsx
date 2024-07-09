@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import ModalFormData from './ModalFormData'
+import StyleFormWithModal from './FormWithModal.module.css'
 
 export interface FormState {
     email: string;
@@ -26,8 +27,9 @@ const FormWithModal = () => {
 
     return (
         <>
-            <h3>Form</h3>
-            <form onSubmit={handleSubmit(onSubmit)} >
+            
+            <form onSubmit={handleSubmit(onSubmit)} className={StyleFormWithModal.form}>
+                <h3 className={StyleFormWithModal.title}>Form</h3>
                 <label htmlFor='email'> Email:</label>
                 <input type='mail' id='email' required {...register('email')}></input>
 
@@ -45,7 +47,10 @@ const FormWithModal = () => {
                 </select>
 
                 {/* <button type='submit'>check the info</button> */}
-                <ModalFormData dataForModal={dataForModal}></ModalFormData>
+                <button className={StyleFormWithModal.button}>
+                   <ModalFormData dataForModal={dataForModal}></ModalFormData> 
+                </button>
+                
             </form>
 
         </>

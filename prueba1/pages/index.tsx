@@ -1,11 +1,11 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import TableDataPosts from "./components/TableDataPosts";
+import TableDataPosts from "./components/TableData/TableDataPosts";
 import DelLastWord from "./components/DelLastWord";
 import ActualHourButton from "./components/ActualHourButton";
 import VowelCounter from "./components/VowelCounter";
-import FormWithModal from "./components/FormWithModal";
+import FormWithModal from "./components/FormWithModal/FormWithModal";
 
 
 const inter = Inter({ subsets: ["latin"] });
